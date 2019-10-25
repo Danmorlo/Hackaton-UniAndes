@@ -1,1 +1,1 @@
-# Hackat-n-UniAndes
+# Hackaton-UniAndes
