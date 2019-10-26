@@ -1,0 +1,186 @@
+.balance{
+    height: 100%;
+    width: 100%;
+}
+.balance-banner{
+    margin:2%;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: rgb(169, 209, 58);
+    font-weight: bold;
+}   
+.balance-value{
+    font-size: 3.5rem;
+    margin-left: 3rem;
+    color: white;
+}
+.transaction-container{
+    width: 100%;
+    height: 17vh;
+    padding: 2%;
+    display: flex;
+}
+.transaction-photo{
+    height: 90%;
+}
+.transaction-photo img{
+    height: 13vh;
+    width: 13vh;
+    object-fit: cover;
+    border-radius: 13vh;
+}
+.transaction-info{
+    padding: 1%;
+}
+.transaction-info p{
+    margin: 0;
+}
+.transactions-sell{
+    display: flex;
+    justify-content: space-between;
+}
+.medals-icons{
+    color: rgb(169, 209, 58);
+    height: 10vh;
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+.medals-icons .inactive{
+    color: grey;
+}
+.medals-line{
+    height: 2vh;
+    width: 80vw;
+    border: solid gray 1px;
+    border-radius: 20px;
+    margin-left: 12%;
+}
+.medals-line-active{
+    height: 100%;
+    width: 20%;
+    background-color:  rgb(169, 209, 58);
+    border-radius: 20px;    
+}
+.goal-container{
+    display: flex;
+    margin: 2%;
+}
+.goal-icon{
+    min-height: 10vh;
+    min-width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.colorgreen{
+    color: rgb(169, 209, 58);
+}
+.colorred{
+    color: rgb(218, 61, 55);
+}
+.payment-container{
+    height: 100%;
+    width: 100%;
+}
+.payment-code{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.payment-code img{
+    width: 100%;
+}
+.payment-photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment-camera{
+    width: 80%;
+    height: 10vh;
+    border-radius: 20vh;
+    background-color: rgb(169, 209, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.payment-camera span{
+    margin-left: 4%;
+}
+#nofile{
+    
+}
+.inputfile {
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: transparent;
+}
+.indicator-container{
+    display: flex;
+}
+.indicator-icon{
+    margin: 2%;
+}
+.market{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.offercontainer{
+    width: 100%;
+}
+.offer{
+    width: 100%;
+    display: flex;
+    margin: 2%;
+    margin-top: 3%;
+}
+
+.offer-photo img{
+    height: 13vh;
+    width: 13vh;
+    object-fit: cover;
+    border-radius: 13vh;
+}
+.offer-line{
+    height: 2vh;
+    width: 60vw;
+    border: solid gray 1px;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+.offer-line-active{
+    height: 100%;
+    width: 20%;
+    background-color:  rgb(58, 129, 209);
+    border-radius: 20px;    
+}
+.offer-txt{
+    margin: auto;
+}
+.por50{
+    width: 50%;
+}
+.offer-txt{
+ margin-left: 21%;
+}

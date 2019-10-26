@@ -1,0 +1,21 @@
+.header{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(148, 177, 204);
+    display: flex;
+}
+.headerlogo{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+.headerlogo img{
+    height: 90%;
+}
+.headername{
+    width: 70vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
