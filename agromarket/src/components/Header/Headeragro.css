@@ -1,7 +1,7 @@
 .header{
     height: 12vh;
     width: 100%;
-    background-color: #518CC4;
+    background-color: rgb(148, 177, 204);
     display: flex;
 }
 .headerlogo{

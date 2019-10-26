@@ -1,0 +1,40 @@
+.balance{
+    height: 100%;
+    width: 100%;
+}
+.balance-banner{
+    margin:2%;
+    padding: 2%;
+    border-radius: 20px;
+        
+    font-weight: bold;
+}   
+.balance-value{
+    font-size: 3.5rem;
+    margin-left: 5.5rem;
+}
+.transaction-container{
+    width: 100%;
+    height: 15vh;
+    padding: 2%;
+    display: flex;
+}
+.transaction-photo{
+    height: 90%;
+}
+.transaction-photo img{
+    height: 13vh;
+    width: 13vh;
+    object-fit: cover;
+    border-radius: 13vh;
+}
+.transaction-info{
+    padding: 1%;
+}
+.transaction-info p{
+    margin: 0;
+}
+.transactions-sell{
+    display: flex;
+    justify-content: space-between;
+}
