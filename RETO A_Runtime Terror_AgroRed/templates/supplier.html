@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Agrored</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="../css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="../css/animate-wow.css">
+      <!--main css-->
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="../css/slick.min.css">
+      <link rel="stylesheet" href="../css/jquery-ui.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="../css/responsive.css">
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-12 left-rs">
+                     <div class="navbar-header">
+                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        </button>
+                        <a href="index.html" class="navbar-brand"><img src="../images/logo.png" alt="" /></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                     <div class="right-nav">
+                        <div class="login-sr">
+                           <div class="login-signup">
+                              <ul>
+                                 <li><a href="#">Login</a></li>
+                                 <li><a class="custom-b" href="#">Registrarse</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.container-fluid --> 
+         </nav>
+      </header>
+      <!-- Modal -->
+      <div class="modal fade lug" id="myModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Cambio</h4>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sidebar" class="top-nav">
+         <ul id="sidebar-nav" class="sidebar-nav">
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="#">¿Cómo funciona?</a></li>
+            <li><a href="#">Agrored</a></li>
+         </ul>
+      </div>
+      <div class="profile-box banner-p">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="profile-b">
+                     <img src="../images/exito.jpg" alt="#" />
+                     <div class="dit-p">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">
+                           <div class="profile-left-b">
+                              <ul>
+                                 <li><a href="#">Comprador </a></li>
+                                 <li><a href="#">Almacén de cadena</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="Producto-profile-box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-2 col-sm-4 pr">
+                  <div class="profile-pro-left">
+                     <div class="left-profile-box-m">
+                        <div class="pro-img">
+                           <img src="../images/logoExito.png" alt="#" />
+                        </div>
+                        <div class="pof-text">
+                           <h3>Almacenes Éxito</h3>
+                           <div class="check-box"></div>
+                        </div>
+                        <a href="#">Contactar compañía</a>
+                        <p><img src="../images/report-icon.jpg" alt="" />Reportar a este usuario</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-10 col-sm-8">
+                  <div class="profile-pro-right">
+                     <div class="panel with-nav-tabs panel-default">
+                        <div class="panel-heading clearfix">
+                           <ul class="nav nav-tabs pull-left">
+                              <li class="active"><a href="#tab1default" data-toggle="tab">Pedidos <span>630</span></a></li>
+                              <li><a href="#tab2default" data-toggle="tab">Acerca de nosotros</a></li>
+                              <li><a href="#tab3default" data-toggle="tab">Contactos</a></li>
+                           </ul>
+                           <ul class="nav nav-tabs pull-right right-t">
+                              <li class="dropdown">
+                                 <a href="#" data-toggle="dropdown">Sort <span class="caret"></span></a>
+                                 <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>
+                                 </ul>
+                              </li>
+                              <li><a href="#tab5default" data-toggle="tab"><i class="fa fa-sliders" aria-hidden="true"></i> Refine</a></li>
+                           </ul>
+                        </div>
+                        <div class="panel-body">
+                           <div class="tab-content">
+                              <div class="tab-pane fade in active" id="tab1default">
+                                <table class="table table-hover">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Ref.</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Estado</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">355</th>
+                                        <td>Tomate Larga Vida</td>
+                                        <td>500 Libras</td>
+                                        <td>En tránsito</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">356</th>
+                                        <td>Papa sabanera</td>
+                                        <td>400 Kilos</td>
+                                        <td>En recolección</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">357</th>
+                                        <td>Papaya</td>
+                                        <td>256 unid.</td>
+                                        <td>Entregado</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">358</th>
+                                        <td>Lechuga crespa</td>
+                                        <td>500 unid.</td>
+                                        <td>Entregado</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">359</th>
+                                        <td>Aguacate</td>
+                                        <td>120 Kilos</td>
+                                        <td>En recolección</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-end">
+                                      <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1"><</a>
+                                      </li>
+                                      <li class="page-item"><a class="page-link" href="#">71</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">72</a></li>
+                                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                      <li class="page-item">
+                                        <a class="page-link" href="#">></a>
+                                      </li>
+                                    </ul>
+                                  </nav>
+                              </div>
+                              <div class="tab-pane fade" id="tab2default">
+                                 <div class="about-box">
+                                    <h2>¿Qué hace Agrored?</h2>
+                                    <p>Agrored es un ecosistema digital para conectar los agricultores con sus proveedores generándole valor a los stakeholders.</p>
+                                   </div>
+                              </div>
+                              <div class="tab-pane fade" id="tab3default">Default 3</div>
+                              <div class="tab-pane fade" id="tab4default">Default 4</div>
+                              <div class="tab-pane fade" id="tab5default">Default 5</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-top clearfix">
+                     <div class="col-md-2 col-sm-6">
+                        <h2>Crea una cuenta gratis de inmediato.
+                        </h2>
+                     </div>
+                     <div class="col-md-6 col-sm-6">
+                        <div class="form-box">
+                           <input type="text" placeholder="Ingrese su cédula" />
+                           <button>Continuar</button>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-12">
+                        <div class="help-box-f">
+                           <h4>¿Preguntas? Llámenos al 21 12 12 12 para más información</h4>
+                           <p>Fácil de utilizar, sin usuras y para todo público</p>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8">
+                     <p><img width="90" src="../images/logo.png" alt="#" style="margin-top: -5px;" /> All Rights Reserved. Company Name © 2018</p>
+                  </div>
+                  <div class="col-md-4">
+                     <ul class="list-inline socials">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-linkedin" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--main js--> 
+      <script src="../js/jquery-1.12.4.min.js"></script> 
+      <!--bootstrap js--> 
+      <script src="../js/bootstrap.min.js"></script> 
+      <script src="../js/bootstrap-select.min.js"></script>
+      <script src="../js/slick.min.js"></script> 
+      <script src="../js/jquery-ui.js"></script> 
+      <script src="../js/wow.min.js"></script> 
+      <!--custom js--> 
+      <script src="../js/custom.js"></script>
+   </body>
+</html>

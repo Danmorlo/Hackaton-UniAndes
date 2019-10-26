@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>AgroRed</title>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--enable mobile device-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--fontawesome css-->
+      <link rel="stylesheet" href="../css/font-awesome.min.css">
+      <!--bootstrap css-->
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+      <!--animate css-->
+      <link rel="stylesheet" href="../css/animate-wow.css">
+      <!--main css-->
+      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/bootstrap-select.min.css">
+      <link rel="stylesheet" href="../css/slick.min.css">
+      <!--responsive css-->
+      <link rel="stylesheet" href="../css/responsive.css">
+   </head>
+   <body>
+      <header id="header" class="top-head">
+         <!-- Static navbar -->
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-4 col-sm-12 left-rs">
+                     <div class="navbar-header">
+                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        <span class="icon-bar"></span> 
+                        </button>
+                        <a href="index.html" class="navbar-brand"><img src="../images/logoAgroRed2.png" alt="" /></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-12">
+                     <div class="right-nav">
+                        <div class="login-sr">
+                           <div class="login-signup">
+                              <ul>
+                                 <li><a href="login.html">Iniciar sesión</a></li>
+                                 <li><a class="custom-b" href="signup.html">Regístrate</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/.container-fluid --> 
+         </nav>
+      </header>
+      <!-- Modal -->
+      <div class="modal fade lug" id="myModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Cambiar idioma</h4>
+               </div>
+               <div class="modal-body">
+                  <ul>
+                     <li><a href="#"><img src="../images/flag-up-1.png" alt="" /> United States</a></li>
+                     <li><a href="#"><img src="../images/flag-up-2.png" alt="" /> France </a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="sidebar" class="top-nav">
+         <ul id="sidebar-nav" class="sidebar-nav">
+            <li><a href="#">Ayuda</a></li>
+            <li><a href="howitworks.html">¿Cómo funciona?</a></li>
+            <li><a href="about-us.html">Acerca de Agrored</a></li>
+         </ul>
+      </div>
+      <div class="page-content-product">
+         <div class="main-product">
+            <div class="container">
+               <div class="row clearfix">
+                  <div class="find-box">
+                     <h1>Encuentre su producto<br>o elemento que necesite</h1>
+                     <h4>Sáquele provecho a su cultivo</h4>
+                     <div class="product-sh">
+                        <div class="col-sm-6">
+                           <div class="form-sh">
+                              <input type="text" placeholder="Encuentre lo que busca" >
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="form-sh">
+                              <select class="selectpicker">
+                                 <option>Frutas</option>
+                                 <option>Verduras</option>
+                                 <option>Granos</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="col-sm-3">
+                           <div class="form-sh"> <a class="btn" href="#">Buscar</a> </div>
+                        </div>
+                        <p>!O sencillamente<a href="#"> oprima aquí </a> e inspírese!</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row clearfix">
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Pitaya</h4>
+                           <img src="../images/product/pitaya.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Pera</h4>
+                           <img src="../images/product/peras.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Cabra</h4>
+                           <img src="../images/product/cabra.png" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Gallina</h4>
+                           <img src="../images/product/gallina.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Conejo</h4>
+                           <img src="../images/product/conejo.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Sandía</h4>
+                           <img src="../images/product/sandia.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Vaca</h4>
+                           <img src="../images/product/vaca.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-md-3">
+                     <a href="productpage.html">
+                        <div class="box-img">
+                           <h4>Chontaduro</h4>
+                           <img src="../images/product/chontaduro.jpg" alt="" />
+                        </div>
+                     </a>
+                  </div>
+                  <div class="categories_link">
+                     <a href="#">Browse all categories here</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="cat-main-box">
+         <div class="container">
+            <div class="row panel-row">
+               <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.0s">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <img src="images/xpann-icon.jpg" class="icon-small" alt="">
+                        <h4>Encuentre sus proveedores</h4>
+                        <p> Consiga a sus proveedores de la forma más sencilla y con beneficios para su cultivo.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <img src="../images/create-icon.jpg" class="icon-small" alt="">
+                        <h4>Maneje el transporte de sus cultivos</h4>
+                        <p>No sufra consiguiendo quién le distribuya sus productos. ¡Dejénoslo a nosotros!
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 wow fadeIn hidden-sm" data-wow-delay="0.4s">
+                  <div class="panel panel-default">
+                     <div class="panel-body">
+                        <img src="../images/get-icon.jpg" class="icon-small" alt="">
+                        <h4>Reciba consejos financieros</h4>
+                        <p>No se preocupe con las díficiles cuentas para mantener su cultivo, maneje todo desde la aplicación.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="products_exciting_box">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                  <div class="exciting_box f_pd">
+                     <img src="../images/exciting_img-01.jpg" class="icon-small" alt="" />
+                     <h4>Asegure <strong>su cultivo</strong> en el caso de condiciones climáticas extremas.
+                     </h4>
+                     <p> Recupérese de las perdidas por inundaciones, sequías, etc. Nosotros estamos ahí para usted
+                        en el momento en que nadie más está.
+                  </div>
+               </div>
+               <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                  <div class="exciting_box l_pd">
+                     <img src="../images/exciting_img-02.jpg" class="icon-small" alt="" />
+                     <h4>¿Está usted<strong> reportado </strong> en alguna entidad bancaria?</h4>
+                     <p>Si la respuesta fue sí. Entonces usted está en el lugar indicado. A través de nuestra red de confianza
+                        obtenga beneficios para saldar todas las cuentas que tenga con alguna entidad bancaria. Nosotros nos encargamos
+                        de todo.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="products">
+         <div class="main-products">
+            <h2>Productos tendencia en Agrored</h2>
+            <div class="product-slidr">
+               <div class="slider">
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="../images/perro.jpg" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Perro</h4>
+                                 <p>Por <span>Juan Avelino</span></span></p>
+                              </div>
+                              <a href="#">$30000</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Guardar la lista de deseos </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Te gusta</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="../images/fresas.jpg" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Fresa</h4>
+                                 <p>Por <span>Juan Rubio</span></span></p>
+                              </div>
+                              <a href="#">$2000</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Guardar la lista de deseos </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Te gusta</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="../images/caballo.jpg" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Caballo</h4>
+                                 <p>Por <span>Daniel Perilla</span></p>
+                              </div>
+                              <a href="#">$3220000</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Guardar la lista de deseos </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Te gusta</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="../images/papaya.jpg" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Papaya</h4>
+                                 <p>Por <span>Luis Gómez</span></p>
+                              </div>
+                              <a href="#">$900</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Guardar la lista de deseos </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Te gusta</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="../images/pina.jpg" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Piña</h4>
+                                 <p>Por <span>Vilma Tirado</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Guardar la lista de deseos </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Te gusta</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="prod-box">
+                        <div class="prod-i">
+                           <img src="../images/uva.jpg" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                           <div class="dit-t clearfix">
+                              <div class="left-ti">
+                                 <h4>Uva</h4>
+                                 <p>Por <span>Pedro Rodriguez</span></p>
+                              </div>
+                              <a href="#">$1220</a>
+                           </div>
+                           <div class="dit-btn clearfix">
+                              <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Guardar la lista de deseos </a>
+                              <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Te gusta</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="main-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="footer-top clearfix">
+                     <div class="col-md-2 col-sm-6">
+                        <h2>Comienza una cuenta hoy gratis!</h2>
+                     </div>
+                     <div class="col-md-6 col-sm-6">
+                        <div class="form-box">
+                           <input type="text" placeholder="Pon tu correo" />
+                           <button>Continuar</button>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-12">
+                        <div class="help-box-f">
+                           <h4>¿Dudas? Llamanas al 3134329184</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer-link-box clearfix">
+                     <div class="col-md-6 col-sm-6">
+                        <div class="left-f-box">
+                           <div class="col-sm-4">
+                              <h2>Vender en Agrored</h2>
+                              <ul>
+                                 <li><a href="#">Crear cuenta</a></li>
+                                 <li><a href="howitworks.html">Cómo funciona?</a></li>
+                                 <li><a href="pricing.html">Precios</a></li>
+                                 <li><a href="#">Preguntas comunes para Vendedores</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>Comprar en Agrored</h2>
+                              <ul>
+                                 <li><a href="#">Crear cuenta</a></li>
+                                 <li><a href="#">¿Cómo funciona?</a></li>
+                                 <li><a href="#">Categorias</a></li>
+                                 <li><a href="#">Preguntas comunes para Compradores</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-sm-4">
+                              <h2>COMPAÑÍA</h2>
+                              <ul>
+                                 <li><a href="about-us.html">Acerca de Agrored</a></li>
+                                 <li><a href="#">Contactanaos</a></li>
+                                 <li><a href="#">Carreras</a></li>
+                                 <li><a href="#">Terminos de uso</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8">
+                     <p><img width="90" src="../images/logo.png" alt="#" style="margin-top: -5px;" /> All Rights Reserved. Agrored © 2018</p>
+                  </div>
+                  <div class="col-md-4">
+                     <ul class="list-inline socials">
+                        <li>
+                           <a href="">
+                           <i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-twitter" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="">
+                           <i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa fa-linkedin" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                     <ul class="right-flag">
+                        <li><a href="#"><img src="../images/flag.png" alt="" /> <span>Cambiar idioma</span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--main js--> 
+      <script src="../js/jquery-1.12.4.min.js"></script> 
+      <!--bootstrap js--> 
+      <script src="../js/bootstrap.min.js"></script> 
+      <script src="../js/bootstrap-select.min.js"></script>
+      <script src="../js/slick.min.js"></script> 
+      <script src="../js/wow.min.js"></script>
+      <!--custom js--> 
+      <script src="../js/custom.js"></script>
+   </body>
+</html>
