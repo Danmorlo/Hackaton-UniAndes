@@ -22,9 +22,9 @@ export default function Medals() {
             </div>
             <div className="medals-prices">
                 <Goal classcolor="colorgreen" iconpos={0} title={"Aumento de productividad del 20%"} description={"Felicidades lograste una racha de tratos exitosos"}></Goal>
-                <Goal classcolor="colorgreen" iconpos={1} title={"Disminución de la taza de credito al 2%"} description={"Felicidades lograste disminuir la taza de tu credito"}></Goal>
-                <Goal classcolor="" iconpos={2} title={"Cosechar productos de la categoria mas demandada"} description={"Prueba utilizar el lector de tendencias para decidir"}></Goal>
-                <Goal classcolor="" iconpos={3} title={"Ir a tu corresponsar agromarker mas cercano"} description={"Visita al corresponsal amigo ms cercano y conoce todos los beneficios que tiene para ti"}></Goal>
+                <Goal classcolor="colorgreen" iconpos={1} title={"Disminución de la tasa de crédito al 2%"} description={"Felicidades lograste disminuir la taza de tu crédito"}></Goal>
+                <Goal classcolor="" iconpos={2} title={"Cosechar productos de la categoría mas demandada"} description={"Prueba utilizar el lector de tendencias para decidir"}></Goal>
+                <Goal classcolor="" iconpos={3} title={"Ir a tu corresponsal agromarker mas cercano"} description={"Visita al corresponsal amigo más cercano y conoce todos los beneficios que tiene para ti"}></Goal>
                 
             </div>
         </div>
