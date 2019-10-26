@@ -10,7 +10,7 @@ export default function Headeragro() {
             </div>
             <div className="headername">
                 <h4>Bienvenido:</h4>
-                <h4> </h4>
+                <h4> Francisco</h4>
             </div>
         </div>
     )
