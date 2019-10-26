@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ceres</string>
+    <string name="button">Client</string>
+    <string name="button2">Server</string>
+    <string name="textview">Ceres</string>
+    <string name="info">Información obtenida</string>
+    <string name="envio">Enviar</string>
+</resources>
