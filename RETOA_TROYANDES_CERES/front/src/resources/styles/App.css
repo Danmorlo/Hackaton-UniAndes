@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --primary: rgb(91, 64, 12);
+  --primary-opacity: rgb(91, 64, 12, 0.6);
+  --primary-opacity2: rgb(91, 64, 12, 0.8);
+  --primary-opacity3: rgb(91, 64, 12, 0.2);
+}
+
+html,
+body,
+#root {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+#main {
+  height: 100%;
+  background-image: url(https://www.elespectador.com/sites/default/files/gettyimages-668076810_0.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  height: 20vh;
+  background-color: var(--primary);
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  font-size: 3em;
+
+  display: grid;
+  border-radius: 0 0 100% 100%;
+  color: white;
+}
+
+#header > div {
+  margin: auto;
+  width: 100%;
+}
+
+#header > div > span {
+  padding: 0 10px;
+  display: inline-flex;
+  vertical-align: super;
+}
+
+#header > div > div {
+  background-image: url(/images/logo.png);
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+#content {
+  position: relative;
+  height: 100vh;
+  display: grid;
+}
+
+#blanco {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  background-color: white;
+  opacity: 0.5;
+}
+
+#content > div {
+  margin: auto;
+  text-align: center;
+}
+
+#content > div > div {
+  background-color: var(--primary-opacity);
+  padding: 10px 20px 20px;
+  margin: 20px;
+  width: 30vw;
+}
+
+#content > div > div > * {
+  display: block;
+}
+
+#content > div > div > label {
+  color: white;
+  margin: auto;
+  padding: 5px 20px 10px;
+  display: block;
+  text-align: center;
+}
+
+#content > div > div > select,
+#content > div > div > input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+#content > div > div > input {
+  width: calc(100% - 25px);
+}
+
+#content > div > button {
+  margin: auto;
+  background: var(--primary);
+  border: 1px solid var(--primary);
+  padding: 10px 20px;
+  color: white;
+}
+
+#content > div > button:hover {
+  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+#content-main {
+  height: 90vh;
+  display: grid;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+}
+
+#content-main > div {
+  margin: auto;
+  display: grid;
+  gap: 30px;
+}
+
+#content-main > div > div:nth-child(1) {
+  display: grid;
+}
+
+#content-main > div > div:nth-child(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+#content-main > div > div > button {
+  padding: 50px;
+  background-color: var(--primary-opacity2);
+  color: white;
+  border: 1px solid transparent;
+  font-size: 1.5em;
+}
+
+#content-main > div > div > button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+#content-budget {
+  height: 90vh;
+  display: grid;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+}
+
+#content-budget > div {
+  margin: auto;
+}
+
+#content-budget > div > div:nth-child(1) {
+  background-color: var(--primary-opacity2);
+  padding: 10px 50px;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+}
+
+#content-budget > div > div:nth-child(2) {
+  background-color: white;
+  padding: 20px;
+}
+
+#content-budget > div > div:nth-child(2) > span {
+  display: block;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#content-budget > div > div:nth-child(2) > span:nth-child(2) {
+  padding: 0 0 10px;
+  font-size: 5em;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+
+#footer > button {
+  background-color: var(--primary-opacity2);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+
+#footer > button:nth-child(1) {
+  float: left;
+}
+
+#footer > button#terminar {
+  float: right;
+}
+
+#footer > button:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+#content-historial {
+  height: 90vh;
+  display: grid;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+}
+
+#content-historial > div {
+  padding: 20px;
+  margin: auto;
+  min-width: 60vw;
+}
+
+#content-historial > div > div:nth-child(1) {
+  background-color: var(--primary-opacity2);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+
+#content-historial > div > div:nth-child(2) {
+  background-color: white;
+  min-height: 50vh;
+  max-height: 50vh;
+}
+
+#transacciones-scroll {
+  padding: 10px 20px;
+  overflow-y: auto;
+}
+
+#transacciones-scroll > div > span:nth-child(2) {
+  float: right;
+}
+
+#transacciones-scroll > .history-item {
+  border-bottom: 1px solid lightgray;
+  padding: 8px 0;
+}
+
+#content-supplies {
+  height: 90vh;
+  display: grid;
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+}
+
+#content-supplies > div:nth-child(1) {
+  padding: 20px;
+  margin: auto;
+  min-width: 60vw;
+}
+
+#content-supplies > div:nth-child(1) > div:nth-child(1) {
+  background-color: var(--primary-opacity2);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1.5em;
+}
+
+#content-supplies > div:nth-child(1) > div:nth-child(1) > button {
+  float: right;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  box-shadow: 1px 1px 10px;
+  border-radius: 50%;
+}
+
+#content-supplies > div:nth-child(1) > div:nth-child(1) > button:hover {
+  background-color: white;
+  color: var(--primary);
+}
+
+#content-supplies > div:nth-child(1) > div:nth-child(2) {
+  background-color: white;
+  min-height: 50vh;
+  max-height: 50vh;
+}
+
+#supply-scroll {
+  padding: 10px 20px;
+  overflow-y: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+#supply-scroll > .supply-item {
+  border: 2px solid transparent;
+  /* border-bottom: 1px solid lightgray; */
+  padding: 0;
+  cursor: pointer;
+}
+
+#supply-scroll > .supply-item > img {
+  height: 30vh;
+  display: block;
+  margin: auto;
+  /* border: 1px solid var(--primary); */
+}
+
+#supply-scroll > .supply-item > div {
+  background-color: var(--primary);
+  color: white;
+}
+
+#supply-scroll > .supply-item > div > span {
+  display: block;
+  text-align: center;
+}
+
+#supply-scroll > .supply-item:hover {
+  /* border: 2px solid black; */
+  background-color: var(--primary-opacity3);
+}
+
+#supply-scroll > .supply-item.supply-selected {
+  border: 2px solid black;
+  background-color: olive;
+}
+
+#modal {
+  position: absolute;
+  top: -10vh;
+  left: 0;
+  height: 111%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  /* display: none; */
+}
+
+#modal.showcart {
+  display: block;
+}
+
+#modal-container {
+  background-color: white;
+  margin: auto;
+  display: inline-flex;
+  top: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  box-shadow: 0 1px 10px -5px black;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+}
+
+#modal-header {
+  padding: 0 0 10px;
+  font-weight: bold;
+}
+
+#modal-header,
+#modal-body {
+  display: block;
+}
+
+.cart-item {
+  display: block;
+  padding: 5px 20px;
+  border: 1px solid lightgray;
+}
+
+#modal-body > div > button {
+  background-color: var(--primary);
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  color: white;
+  margin: 10px 0 0;
+}
