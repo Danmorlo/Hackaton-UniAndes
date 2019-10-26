@@ -1,9 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingBasket,faMedal, faArrowsAltH,faMoneyBillWave} from '@fortawesome/free-solid-svg-icons'
+import { faShoppingBasket,faMedal,faMoneyBillWave,faExchangeAlt} from '@fortawesome/free-solid-svg-icons'
 
 
-let icons = [faShoppingBasket, faMedal,faArrowsAltH,faMoneyBillWave]
+let icons = [faShoppingBasket, faMedal,faExchangeAlt,faMoneyBillWave]
 export default function Navigationelement(props) {
     
     return (

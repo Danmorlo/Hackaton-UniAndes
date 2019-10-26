@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 // routers
-import {BrowserRouter,Route} from "react-router-dom"
+
 
 
 
@@ -9,8 +9,11 @@ import {BrowserRouter,Route} from "react-router-dom"
 import Nav from "./components/nav/Nav"
 import Headeragro from "./components/Header/Headeragro"
 import Main from "./components/Containers/Main"
+import Medals from "./components/Containers/Medals"
+import Payment from './components/Containers/Payment';
 
 class App extends React.Component {
+  
   constructor(props){
     super(props);
     this.state ={
@@ -22,17 +25,15 @@ class App extends React.Component {
     parent.setState({
       active:newactive
     });
+    
   }
   render(){
+    let routes = [<Main/>,<Medals/>,<Payment/>];
     return (
       <div className="App">
         <Headeragro></Headeragro>
         <div className="main-container">
-          <BrowserRouter>
-            <Route path="/" exact>
-              <Main></Main>
-            </Route>
-          </BrowserRouter>
+          {routes[this.state.active]}
         </div>
         <Nav numberactive={this.state.active} manage={this.updateactive} managecomponent={this}/>
       </div>

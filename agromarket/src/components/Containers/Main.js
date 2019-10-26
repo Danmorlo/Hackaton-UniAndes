@@ -9,19 +9,19 @@ export default class Main extends Component {
             <div className="balance">
                 <div className="balance-banner">
                     <h2>Tu balance es:</h2>
-                    <span className="balance-value">$20.000</span>
+                    <span className="balance-value">$200.000</span>
                     <p>{(new Date()).toUTCString()}</p>
                 </div>
                 <div className="transactions">
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
-                    <Transaction/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
+                    <Transaction alt={"Tomate"}/>
                 </div>
             </div>
         )

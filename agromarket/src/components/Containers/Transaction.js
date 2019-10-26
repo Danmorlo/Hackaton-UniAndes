@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Transaction() {
+export default function Transaction(props) {
     return (
         <div className="transaction-container">
             <div className="transaction-photo">
-                <img src={"https://www.sqm.com/wp-content/uploads/2018/04/tomate-992x550.jpg"}></img>
+                <img src={"https://www.sqm.com/wp-content/uploads/2018/04/tomate-992x550.jpg"}  alt={props.alt}></img>
             </div>
             <div className="transaction-info">
                 <h4>Venta de tomate</h4>
