@@ -1,0 +1,152 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="./todo.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plan siembra</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form id="signup-form" class="signup-form" enctype="multipart/form-data">
+                <h3>
+                    Comprar
+                </h3>
+                <fieldset>
+                    <h2>¿Qué quieres comprar?</h2>
+                    <div class="form-group">
+                        <div class="w3-dropdown-hover">
+                            <button id="boton" color="#4CAF50" ; id="producto" class="w3-button" ;> Producto</button>
+
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                <a onclick="papa()" href="#" class="w3-bar-item w3-button">Papa</a>
+                                <a onclick="cafe()" href="#" class="w3-bar-item w3-button">Cafe</a>
+                                <a onclick="melon()" href="#" class="w3-bar-item w3-button">Melon</a>
+                                <a onclick="flores()" href="#" class="w3-bar-item w3-button">Flores ornamentales</a>
+                                <a onclick="ají()" href="#" class="w3-bar-item w3-button">Aji</a>
+                                <a onclick="algodon()" href="#" class="w3-bar-item w3-button">Algodon</a>
+                                <a onclick="fresa()" href="#" class="w3-bar-item w3-button">Fresa</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input width="50px" type="number" class="form-control" id="basic-url"
+                            aria-describedby="basic-addon3" placeholder="Cantidad">
+
+                        <div class="w3-dropdown-hover">
+                            <button id="peso" class="w3-button">Peso</button>
+                            <div class="w3-dropdown-content w3-bar-block w3-border">
+                                <a onclick="kg()" href="#" class="w3-bar-item w3-button">Kg</a>
+                                <a onclick="ton()" href="#" class="w3-bar-item w3-button">Ton</a>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <h3>
+                    Mapa
+                </h3>
+                <fieldset>
+                    <h2>Mapa</h2>
+                    <iframe width="100%" height="520" frameborder="0" src="https://cardonamronald.carto.com/builder/10c4454c-8f3c-42f6-88d8-6057176a0a4a/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+                </fieldset>
+
+                <h3>
+                    Cocecha disponible
+                </h3>
+                <fieldset>
+                    <h2>Cocecha disponible</h2>
+                    <div style="overflow-y: scroll; height:400px; ">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Producto</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Ubicacion</th>
+                                    <th scope="col">Contacto</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">PAPA CRIOLLA</th>
+                                    <td>50kg</td>
+                                    <td>170.000</td>
+                                    <td>Cra...</td>
+                                    <td>32619483</td>
+                                    <td><button onclick="comprar()" type="button" class="btn btn-primary">Comprar</button></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th scope="row">PAPA PASTUSA</th>
+                                    <td>50kg</td>
+                                    <td>55.000</td>
+                                    <td>Cra...</td>
+                                    <td>313798989</td>
+                                    <td><button onclick="comprar()" type="button" class="btn btn-primary">Comprar</button></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th scope="row">PAPA SABANERA</th>
+                                    <td>50kg</td>
+                                    <td>90.000</td>
+                                    <td>Cra...</td>
+                                    <td>314689456</td>
+                                    <td><button onclick="comprar()" type="button" class="btn btn-primary">Comprar</button></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">PAPA NEGRA</th>
+                                    <td>50kg</td>
+                                    <td>45.000</td>
+                                    <td>Cra...</td>
+                                    <td>231904567</td>
+                                    <td><button onclick="comprar()" type="button" class="btn btn-primary">Comprar</button></td>
+                                    
+                                </tr>
+                                <tr>
+                                    <th scope="row">PAPA ROJA</th>
+                                    <td>50kg</td>
+                                    <td>40.000</td>
+                                    <td>Cra...</td>
+                                    <td>52859403</td>
+                                    <td><button onclick="comprar()" type="button" class="btn btn-primary">Comprar</button></td>
+                                    
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
