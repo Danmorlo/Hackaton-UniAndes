@@ -75,7 +75,10 @@
     font-size: 1.2rem;
 }
 .colorgreen{
-    color: rgb(169, 209, 58);;
+    color: rgb(169, 209, 58);
+}
+.colorred{
+    color: rgb(218, 61, 55);
 }
 .payment-container{
     height: 100%;
@@ -131,4 +134,15 @@
 .inputfile:focus + label,
 .inputfile + label:hover {
     background-color: transparent;
+}
+.indicator-container{
+    display: flex;
+}
+.indicator-icon{
+    margin: 2%;
+}
+.market{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }

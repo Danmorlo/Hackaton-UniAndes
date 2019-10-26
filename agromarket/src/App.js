@@ -11,6 +11,7 @@ import Headeragro from "./components/Header/Headeragro"
 import Main from "./components/Containers/Main"
 import Medals from "./components/Containers/Medals"
 import Payment from './components/Containers/Payment';
+import Market from "./components/Containers/Market"
 
 class App extends React.Component {
   
@@ -28,7 +29,7 @@ class App extends React.Component {
     
   }
   render(){
-    let routes = [<Main/>,<Medals/>,<Payment />];
+    let routes = [<Main/>,<Medals/>,<Payment />,<Market/>];
     return (
       <div className="App">
         <Headeragro></Headeragro>
