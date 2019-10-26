@@ -9,7 +9,7 @@ class Analisis():
     def __init__(self,file,puntos):
         self.file = file
         self.datos = self.openFile(self.file)
-        self.X = self.darMatrizDeFeatures(self.datos)
+        self.X = array(self.darMatrizDeFeatures(self.datos))
         self.amount = len(self.X)
         self.puntos = puntos
 
@@ -22,14 +22,18 @@ class Analisis():
 
     def darMatrizDeFeatures(self,datos): #loadea, arregla y normaliza
         X = zeros((10,10))
+        
         return X
 
-    #t es el tiempo en pantalla 
-    def sis_de_puntos(self,X,t):
-        if type(t) == bool:
-            0
-        elif type(t) == float:
-            0
+    #t es el tiempo en pantalla o si acertó o falló en lo que hizo.
+    #Los puntajes son del 0-100
+    def sis_de_puntos(self,X):
+        for i in range(X.shape[1]):
+            a = X[:,i]
+            if type(a[0]) == bool:
+                X[:,i] = list(map(int,a))
+            elif type(a) == float:
+                normalizacion = 
 
     def k_vals(self, s, percent=0.9): #esto no importa
         k = 0
