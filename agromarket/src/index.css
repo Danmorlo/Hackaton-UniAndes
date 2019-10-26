@@ -1,0 +1,14 @@
+body,html,#root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+header{
+    height: 10vh;
+    width: 100%;
+}
+.main-container{
+    height: 78vh;
+    width: 100%;
+    overflow-y: scroll;
+}
