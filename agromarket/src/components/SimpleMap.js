@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import Marker from "google-map-react"
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+import finca from "../resources/farm.png"
+import city from "../resources/city.png"
+
+const AnyReactComponent = () => {return (<img src={finca} style={{width:"40px"}}></img>)};
+const AnyReactComponent2 = () => {return (<img src={city} style={{width:"40px"}}></img>)};
 
 class SimpleMap extends Component {
   static defaultProps = {
@@ -10,7 +13,7 @@ class SimpleMap extends Component {
       lat: 5.071492,  
       lng: -74.053508
     },
-    zoom: 11
+    zoom: 10
   };
 
   render() {
@@ -22,9 +25,14 @@ class SimpleMap extends Component {
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
         >
-          <Marker
+          <AnyReactComponent
             lat={5.071492}
             lng={-74.053508}
+            text="Mi finca"
+          />
+           <AnyReactComponent2
+            lat={4.870250 }
+            lng={-74.052035}
             text="Mi finca"
           />
           
