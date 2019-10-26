@@ -5,7 +5,7 @@ body,html,#root{
 }
 
 .main-container{
-    height: 76vh;
+    height: 74vh;
     width: 100%;
     overflow-y: scroll;
 }

@@ -28,7 +28,7 @@ class App extends React.Component {
     
   }
   render(){
-    let routes = [<Main/>,<Medals/>,<Payment/>];
+    let routes = [<Main/>,<Medals/>,<Payment />];
     return (
       <div className="App">
         <Headeragro></Headeragro>

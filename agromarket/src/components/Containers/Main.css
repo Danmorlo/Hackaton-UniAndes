@@ -89,3 +89,46 @@
 .payment-code img{
     width: 100%;
 }
+.payment-photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment-camera{
+    width: 80%;
+    height: 10vh;
+    border-radius: 20vh;
+    background-color: rgb(169, 209, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.3rem;
+}
+.payment-camera span{
+    margin-left: 4%;
+}
+#nofile{
+    
+}
+.inputfile {
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: transparent;
+}
