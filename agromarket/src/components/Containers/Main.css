@@ -146,3 +146,41 @@
     display: flex;
     justify-content: space-around;
 }
+.offercontainer{
+    width: 100%;
+}
+.offer{
+    width: 100%;
+    display: flex;
+    margin: 2%;
+    margin-top: 3%;
+}
+
+.offer-photo img{
+    height: 13vh;
+    width: 13vh;
+    object-fit: cover;
+    border-radius: 13vh;
+}
+.offer-line{
+    height: 2vh;
+    width: 60vw;
+    border: solid gray 1px;
+    border-radius: 20px;
+    margin-left: 5%;
+}
+.offer-line-active{
+    height: 100%;
+    width: 20%;
+    background-color:  rgb(58, 129, 209);
+    border-radius: 20px;    
+}
+.offer-txt{
+    margin: auto;
+}
+.por50{
+    width: 50%;
+}
+.offer-txt{
+ margin-left: 21%;
+}
