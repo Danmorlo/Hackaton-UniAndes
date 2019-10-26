@@ -7,7 +7,7 @@ import {BrowserRouter,Route} from "react-router-dom"
 
 // my components
 import Nav from "./components/nav/Nav"
-
+import Headeragro from "./components/Header/Headeragro"
 
 
 class App extends React.Component {
@@ -26,9 +26,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <header className="App-header">
-
-        </header>
+        <Headeragro></Headeragro>
         <div className="main-container">
           <BrowserRouter>
             <Route path="/" />
