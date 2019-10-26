@@ -1,0 +1,49 @@
+.image-login {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    background-image: url("/../../../assets/img/login.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    min-height: 600px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.form-group{
+    box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.1);
+    background-color: #fff;
+}
+
+
+.register-button{
+    width: 100%;
+    background-color: #542E78;
+    border: none;
+}
+
+.register-button:hover{
+    background-color: #7E3B91;
+    box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.35);  
+} 
+
+@media only screen and (max-width: 1023px) {
+    .image-login {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        height: 0;
+        background-image: url("/../../../assets/img/login.jpg");
+
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      text-align: center;
+      min-height: 150px;
+    }
+  }

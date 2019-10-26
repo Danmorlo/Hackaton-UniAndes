@@ -1,0 +1,112 @@
+<app-navbar [name]=specialist.name></app-navbar>
+<div class="container animated fadeIn">
+  <div class="row">
+    <div class="col-6  fulltext-center ">
+      <div class="name red my-3 text-center p-3">
+        <div class="kid-photo  p-3 ">
+          <img
+            style="width: 150px;"
+            src="assets/img/specialist.jpeg "
+            alt="profile photo"
+          />
+        </div>
+        <h6><strong class="dark-purple">{{specialist.name}} {{specialist.lastname}}</strong></h6>
+        <p>{{specialist.career}}</p>
+      </div>
+      <div class="description my-3  p-3 red">
+        <h6><strong class="dark-purple">Información</strong></h6>
+        <p>
+         {{specialist.description}}
+        </p>
+      </div>
+      
+      <div class="historical red my-3 p-3" [routerLink]="['/report',1]" routerLinkActive="router-link-active" >
+        <div class="historic row mb-3 mx-3 p-2" *ngFor="let item of [1,1,1,1] ">
+<hr>
+          <div class=" col-2 first"><i class="fas fa-question"></i></div>
+          <div class=" col-8 second d-flex ">
+            <p class="dark-purple">Respuesta Pendiente</p>
+          </div>
+          <div class=" col-2 third"  >
+                <img
+                style="width: 50px;
+                border: 1px solid #f2f2f2;"
+                src="assets/img/kids-draw.jpg"
+                alt="draw"
+              />
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 text-center">
+            <div class="carrousel red my-3 p-3">
+                    <h6><strong class="dark-purple">Imágenes por revisar</strong></h6>
+                    <div class="draws-container p-2 row">
+                      <div class="draw" *ngFor="let item of todo">
+                          <div class="col-3 my-3">
+                                <img
+                                     
+                                     style="width: 100px;
+                                       box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.35);"
+                                     src="{{item.img}}"
+                                     alt="draw"
+                                   />
+                          </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+    </div>
+  </div>
+</div>
+   
+
+
+
+<!-- Button trigger modal -->
+
+      
+<div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-row">
+          <div class="form-group col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+              </div>
+              <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+          </div>
+        </div>
+      </form>
+      <div class="alert alert-warning" role="alert">
+        Recibirás un correo de confirmación.
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+      <button type="button" class="btn btn-platzi">Login</button>
+    </div>
+  </div>
+</div>

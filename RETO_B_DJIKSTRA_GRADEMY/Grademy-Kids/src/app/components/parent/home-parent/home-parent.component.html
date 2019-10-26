@@ -1,0 +1,99 @@
+<app-navbar [name]=parent.name></app-navbar>
+<div class="container animated fadeIn">
+  <div class="row">
+    <div class="col-6 fulltext-center">
+      <div class="name red my-3 p-3 text-center">
+        <div class="kid-photo p-3">
+          <img
+            style="width: 150px;"
+            src="assets/img/profile.png"alt="profile photo"
+            />
+        </div>
+        <h6 class="dark-purple"><strong>{{parent.name}} {{parent.lastname}}</strong></h6>
+        <p><strong class="dark-purple">Edad:</strong> 5 años</p>
+      </div>
+      <div class="description my-3 p-3 red text-justify">
+        <h6 class="dark-purple"><strong>Descripción</strong></h6>
+        <p>
+          En este espacio encontrarás las evidencias de las actividades que ha
+          realizdo tu hija, y la opinión de algunos expertos en áreas de la
+          salud y el aprendizaje con respecto al trabajo de Camila
+        </p>
+      </div>
+      <div class="carrousel red my-3 p-3">
+        <h6 class="dark-purple"><strong>Conoce lo que ha hecho tu hijo/a</strong></h6>
+        <div class="draws-container p-2 row">
+          <div class="draw my-3" *ngFor="let image of kid_images">
+            <div class="col-3">
+              <img
+
+                style="width: 100px;
+                box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.3);"
+                src="{{image}}"
+                alt="draw"
+                />
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="historical red my-3 p-3" [routerLink]="['/report',1]"
+        routerLinkActive="router-link-active">
+        <div class="historic row mb-3 mx-3 p-2" *ngFor="let item of activity">
+          <hr>
+          <div class="col-2 first">
+            <img
+              class="specialist"
+              src="{{item.specialist}}" alt="specialist">
+          </div>
+          <div class="col-8 second d-block text-center">
+            <div class="date">
+              <p class="dark-purple d-block"><strong>{{item.date}}</strong></p>
+            </div>
+            <div class="specialist-content">
+              <p>{{item.description}} </p>
+            </div>
+          </div>
+          <div class="col-2 third">
+            <img
+              style="width: 75px;
+              border: 1px solid #f2f2f2;"
+              src="{{item.photo}}"
+              alt="draw"
+              />
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 text-center">
+      <div class="char red my-3 p-3">
+        <h6 class="dark-purple"><strong>Grafica de seguimiento</strong></h6>
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+      </div>
+
+      <div class="general-description my-3 p-3 red text-justify">
+        <h6 class="dark-purple"><strong>Análisis</strong></h6>
+        <p>
+          La barra azul representa el valor que tiene su hijo/a con respecto a
+          la media, si la barra azul es mas alta que la barra roja, esto
+          significa que el valor esta por encima del niño promedio y se
+          recomienda potenciar dicha área de estudio, en caso de estar por
+          debajo se recomienda explorar otras áreas con el fin de encontrar
+          posibles talentos o interes...
+        </p>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbar" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Button trigger modal -->

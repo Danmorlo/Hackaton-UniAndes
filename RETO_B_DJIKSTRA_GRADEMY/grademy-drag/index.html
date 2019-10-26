@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Draw Game</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="iframe" class="container mt-4">
+            <div class="row total-h">
+                <div class="tool-bar col-3 card mr-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <h3 id="phrase"></h3>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="row mt-4">
+                                <div class="col-3">
+                                    <div class="color black"
+                                        onclick="insertShape('circle')">
+
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="color red"
+                                        onclick="insertShape('smallCircle')">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="color-box yellow"
+                                        onclick="insertShape('rectangle')">
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="color-box green"
+                                        onclick="insertShape('square')">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-3 offset-3">
+                                    <div class="color-triangle-purple"
+                                        onclick="insertShape('triangle')">
+                                    </div>
+                                </div>
+                                <div class="col-3 offset-3">
+                                    <div class="color-triangle-blue"
+                                        onclick="insertShape('bigTriangle')">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-3 offset-3">
+                                <button type="submit"
+                                    id="clearbutton"
+                                    class="btn btn-primary-color"
+                                    onclick="clearCanvas()">
+                                    <img src="assets/delete.png" height="45" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button type="submit"
+                                id="exportbutton"
+                                data-toggle="modal"
+                                data-target="#exampleModal"
+                                class="btn primary-color col-12 mt-4"
+                                onclick="exportImg()">Listo</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 card">
+                    <div class="card-body">
+                        <canvas id="canvas" height="500" width="670"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Este es
+                            el dibujo de otra persona</h5>
+                        <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            id="img-pop"
+                            src="https://firebasestorage.googleapis.com/v0/b/grademy-4b8be.appspot.com/o/images%2F1572071502112?alt=media&token=14da3bfb-3cd8-4064-9867-5c1878e8712e"
+                            alt="" width="400" height="298">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-dismiss="modal">Terminar</button>
+                        <button type="button" class="btn btn-primary">Mejorar
+                            dibujo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script defer
+            src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <script
+            src="https://www.gstatic.com/firebasejs/7.2.2/firebase-storage.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script
+            src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyAbbY8KpByVE3jNcV9da0dW_UhdPqpudDg",
+                authDomain: "grademy-4b8be.firebaseapp.com",
+                databaseURL: "https://grademy-4b8be.firebaseio.com",
+                projectId: "grademy-4b8be",
+                storageBucket: "grademy-4b8be.appspot.com",
+                messagingSenderId: "241626109647",
+                appId: "1:241626109647:web:8a72b4e342d50b303209ba",
+                measurementId: "G-9CLNGEP2X6"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>

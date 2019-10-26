@@ -1,0 +1,69 @@
+.dark-purple{
+    color: #542E78;
+}
+
+.red{
+    /* border: 1px solid red; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 8px 0 rgba(160, 124, 124, 0.35);
+}
+.full{
+    height: 100vh;
+
+}
+
+.name h6{
+    text-align: center;
+}
+
+.draw-img{
+    max-width: 250px;
+}
+
+.kid-photo{
+    display: flex;
+}
+
+.specialist{
+border-radius: 50%;
+max-width: 50px;;
+}
+
+.kid-photo img{
+    margin: auto;
+    border-radius: 50%;
+}
+
+.carrousel{
+    /* height: 100px; */
+}
+
+.draw-container
+
+
+
+.description{
+    min-height: 200px;;
+}
+
+.char{
+    min-height: 200px;;
+}
+
+.first , .third{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historic{
+    border: 1px solid #f2f2f2;
+}
