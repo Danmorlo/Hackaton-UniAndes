@@ -1,0 +1,75 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="col-6  fulltext-center ">
+      <div class="name red my-3 p-3">
+        <div class="kid-photo  p-3 ">
+          <img
+            style="width: 150px;"
+            src="assets/img/teacher.jpg "
+            alt="profile photo"
+          />
+        </div>
+        <div class="options text-center">
+            <button class="btn mx-2"><i class="fas fa-check"></i></button>
+            <button class="btn mx-2"><i class="fas fa-times-circle"></i></button>
+            <button class="btn mx-2"><i class="fas fa-question"></i></button>
+        </div>
+      </div>
+      <div class="description my-3  p-3 red">
+            <h6>Description</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fugit
+              iusto vel, quasi explicabo, unde, aspernatur at laudantium quos quae
+              nulla porro veritatis id alias odio est voluptate? Vel, ex.
+            </p>
+          </div>
+
+    </div>
+    <div class="col-6 text-center">
+      <div class="description my-3  p-3 red">
+        <h6 class="mb-4 text-center">Informacion del Reporte</h6>
+        <div class="row">
+          <div class="col-6">
+            <div class="informacion" *ngFor="let item of [1, 1, 1, 1]">
+              <div class="info">
+                <strong>Descripcion:</strong>
+              </div>
+              <div class="content">
+                <p>Contenido</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="informacion" *ngFor="let item of [1, 1, 1, 1]">
+              <div class="info">
+                <strong>Descripcion:</strong>
+              </div>
+              <div class="content">
+                <p>Contenido</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="general-description my-3 p-3   red">
+        <h6>Comparacion</h6>
+       <div class="image-container row">
+           <div class="col-6">
+               <img class="image"
+               style="width: 100%;"
+               src="assets/img/kids-draw.jpg" alt="">
+              
+           </div>
+       
+           <div class="col-6">
+               <img class="image"
+               style="width: 100%;"
+               src="assets/img/kids-draw.jpg" alt="">
+           </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>

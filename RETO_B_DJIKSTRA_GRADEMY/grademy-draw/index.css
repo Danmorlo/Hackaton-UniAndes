@@ -1,0 +1,95 @@
+#canvas {
+  border: 2px solid #00000060;
+  cursor: crosshair;
+  border-radius: 20px;
+}
+.card {
+  -webkit-box-shadow: 7px 6px 5px -4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 7px 6px 5px -4px rgba(0, 0, 0, 0.5);
+  box-shadow: 7px 6px 5px -4px rgba(0, 0, 0, 0.5);
+}
+.primary-color {
+  background-color: rgba(126, 59, 145, 1) !important;
+  color: white !important;
+}
+body {
+  background: rgba(12, 15, 75, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(12, 15, 75, 1) 0%,
+    rgba(12, 15, 75, 1) 1%,
+    rgba(126, 59, 145, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(12, 15, 75, 1)),
+    color-stop(1%, rgba(12, 15, 75, 1)),
+    color-stop(100%, rgba(126, 59, 145, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(12, 15, 75, 1) 0%,
+    rgba(12, 15, 75, 1) 1%,
+    rgba(126, 59, 145, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(12, 15, 75, 1) 0%,
+    rgba(12, 15, 75, 1) 1%,
+    rgba(126, 59, 145, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(12, 15, 75, 1) 0%,
+    rgba(12, 15, 75, 1) 1%,
+    rgba(126, 59, 145, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(12, 15, 75, 1) 0%,
+    rgba(12, 15, 75, 1) 1%,
+    rgba(126, 59, 145, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c0f4b', endColorstr='#7e3b91', GradientType=1 );
+  width: 100%;
+  height: 100%;
+}
+#iframe {
+  width: 100%;
+  height: 100%;
+}
+.total-h {
+  height: 100%;
+}
+
+.color {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 50px;
+  -webkit-box-shadow: 7px 6px 5px -4px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 7px 6px 5px -4px rgba(176, 176, 176, 1);
+  box-shadow: 7px 6px 5px -4px rgba(176, 176, 176, 1);
+}
+.black {
+  background: #808080;
+}
+.red {
+  background: #ff5a5a;
+}
+.yellow {
+  background: #ffff6a;
+}
+.green {
+  background: #00ff74;
+}
+.blue {
+  background: #6066fe;
+}
+.purple {
+  background: #bf62fc;
+}
+.fuchsia {
+  background: #ff5afa;
+}

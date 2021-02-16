@@ -1,0 +1,104 @@
+<div class="row display-flex ">
+        <div
+          class="col col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12 image-login "
+        ></div>
+        <div
+          class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 animated bounceInUp"
+          style="background-color: #f8f8f8;"
+        >
+        <div class="login-form px-5 py-5" >
+          <div class="mb-3 " [routerLink]="['/register']" >
+              <i class="fas fa-arrow-left"></i>
+          </div>
+              <a class="logo d-flex justify-content-center">
+                <div class="img-wrap " style="text-align: center;">
+                  <h3>Registra a tu hijo/a en Grademy</h3>
+                    
+                </div>
+              </a>
+                <form
+                  #kidform = "ngForm"
+                  novalidate
+                  class="content "
+                >
+                  <div class="row">
+                    <div class="col col-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 px-3 mt-5 ">
+                      <div class="form-group ">   
+                        <input
+                          required
+                          ngModel
+                          name="name"
+                          class="form-control"
+                          placeholder="Nombre"
+                          [(ngModel)]="kid.name"
+                          id="email"
+                   
+                        />
+                      </div>
+                      <div class="form-group ">   
+                        <input
+                          required
+                          ngModel
+                          name="nickname"
+                          class="form-control"
+                          placeholder="nickname"
+                          [(ngModel)]="kid.nickname"
+                          id="nickname"
+                   
+                        />
+                      </div>
+                      <div class="form-group ">   
+                        <input
+                          required
+                          ngModel
+                          name="edad"
+                          class="form-control"
+                          placeholder="Edad"
+                          [(ngModel)]="kid.edad"
+                          id="edad"
+                   
+                        />
+                      </div>
+     
+                      <div class="form-group ">           
+                        <input
+                          required
+                          minlength="6"
+                          ngModel
+                          name="password"
+                          [(ngModel)]="kid.password"
+                          class="form-control"
+                          placeholder="contraseña"
+                          type="password"
+                          id="password"
+                        
+                        />
+                      </div>
+      
+    
+                      <div class="button-container my-4">
+                         <button
+                         (click)="onSubmitKid(kidform)"
+                         class="btn btn-lg btn-primary full-width"
+                         style="background-color: #542E78; border: none"
+                       >Registrarse
+                       </button>
+                     
+                         <p class="mt-3" >
+                                ¿Ya tienes una cuenta?
+                                <a [routerLink]="['/login']" style="color: #542E78;"><strong>Inicia Sesión ahora!</strong></a>
+                              </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </form>
+            </div>
+      
+      
+          <!-- ... end Login-Registration Form  -->
+        </div>
+      </div>
+    
+    
+      

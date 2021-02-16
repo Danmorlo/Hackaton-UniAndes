@@ -1,0 +1,41 @@
+<div class="row display-flex">
+  <div
+    class="col col-xl-8 col-lg-6 col-md-12 col-sm-12 col-12 image-login"
+  ></div>
+  <div
+    class="col col-xl-4 col-lg-6 col-md-12 col-sm-12 col-12 animated bounceInUp"
+    style="background-color: #f8f8f8;"
+  >
+    <div class="login-form px-5 py-5">
+      <a class="logo d-flex justify-content-center">
+        <div class="img-wrap text-center">
+          <h1>Registrate en Grademy</h1>
+        </div>
+      </a>
+
+      <div class="button-container my-4">
+        <button
+        [routerLink]="['/register-kid']"
+          class="btn btn-lg btn-primary register-button my-2"
+      
+        >Niño/a</button>
+        <button
+        [routerLink]="['/register-parent']"
+          class="btn btn-lg btn-primary register-button my-2"
+   
+        >Padre</button>
+        <button
+        [routerLink]="['/register-specialist']"
+          class="btn btn-lg btn-primary register-button my-2"
+        
+        >Especialista</button>
+        <p class="mt-3" >
+          ¿Ya tienes una cuenta?
+          <a [routerLink]="['/login']" style="color: #542E78;"><strong>Inicia Sesión ahora!</strong></a>
+        </p>
+      </div>
+    </div>
+
+    <!-- ... end Login-Registration Form  -->
+  </div>
+</div>
